@@ -1,491 +1,194 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Irakli Jashi — TikTok Content Creator & Video Producer</title>
-  <meta name="description" content="Irakli Jashi — TikTok Content Creator and Video Producer crafting scroll-stopping short-form video." />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'] },
-          colors: {
-            ink: { 950: '#07070a', 900: '#0c0c11', 800: '#13131a', 700: '#1c1c26' },
-            accent: { cyan: '#25f4ee', pink: '#fe2c55', violet: '#8b5cf6' }
-          },
-          keyframes: {
-            float: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-14px)' } },
-            fadeUp: { '0%': { opacity: 0, transform: 'translateY(24px)' }, '100%': { opacity: 1, transform: 'translateY(0)' } }
-          },
-          animation: {
-            float: 'float 6s ease-in-out infinite',
-            fadeUp: 'fadeUp .8s ease-out both'
-          }
-        }
-      }
-    }
-  </script>
-
-  <style>
-    body { -webkit-font-smoothing: antialiased; }
-    .text-gradient {
-      background: linear-gradient(90deg, #25f4ee 0%, #8b5cf6 50%, #fe2c55 100%);
-      -webkit-background-clip: text; background-clip: text; color: transparent;
-    }
-    .bg-gradient-accent { background: linear-gradient(135deg, #25f4ee 0%, #8b5cf6 50%, #fe2c55 100%); }
-    .grid-bg {
-      background-image:
-        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
-      background-size: 56px 56px;
-      mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
-      -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
-    }
-    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .8s ease, transform .8s ease; }
-    .reveal.visible { opacity: 1; transform: none; }
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      .reveal { opacity: 1; transform: none; transition: none; }
-      .animate-float, .animate-fadeUp, .animate-pulse { animation: none !important; }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>Irakli Jashi — Notebook</title>
+<meta name="description" content="Irakli Jashi, TikTok content creator in Tbilisi. Scripting, filming and editing TikToks for brands.">
+<meta property="og:title" content="Irakli Jashi — Notebook">
+<meta property="og:description" content="Irakli Jashi, TikTok content creator in Tbilisi. Scripting, filming and editing TikToks for brands.">
+<meta property="og:image" content="assets/abd678a085ceefcf7ccfa65c8e2dfb7b.jpg">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&amp;family=Gochi+Hand&amp;family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;family=Noto+Sans+Georgian:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0;font-family:'Geist',sans-serif;color:#1c1a19;background:#8d8d8d}
+a{color:#1c1a19;text-decoration:none}a:hover{color:#ec6a3c}
+html{scroll-behavior:smooth}
+.lift{transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s}
+.lift:hover{transform:translateY(-8px);box-shadow:0 26px 40px rgba(0,0,0,.28)}
+.wob{transition:transform .2s}
+.wob:hover{transform:rotate(-3deg) scale(1.05)}
+</style>
+<style>#top{margin:0 auto}</style>
 </head>
+<body>
+<div id="top" style="width: 1440px; height: 4180px; box-sizing: border-box; padding: 40px 40px; display: flex; background-color: #8d8d8d; background-image: linear-gradient(rgba(255,255,255,0.35) 2px, transparent 2px), linear-gradient(90deg, rgba(255,255,255,0.35) 2px, transparent 2px); background-size: 56px 56px; font-family: 'Geist', sans-serif">
+<div style="flex-grow: 1; display: flex; flex-direction: column; background-color: #fbfbf8; background-image: repeating-linear-gradient(0deg, transparent 0px, transparent 31px, #e8e8e2 31px, #e8e8e2 32px); box-shadow: 0 10px 40px rgba(0,0,0,0.25); overflow: hidden">
 
-<body class="bg-ink-950 text-zinc-300 font-sans selection:bg-accent-pink/40 selection:text-white">
+<!-- NAV -->
+<nav aria-label="Main" style="height: 64px; box-sizing: border-box; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; background: #fbfbf8; border-bottom: 1px solid #deded7">
+<div style="display: flex; align-items: center; height: 100%">
+<a href="#top" aria-label="Home" style="width: 30px; height: 30px; border-radius: 50%; background: #ef4f8a; display: flex; align-items: center; justify-content: center; margin-right: 14px">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"><path d="M8 14c1 1.5 2.4 2.2 4 2.2s3-.7 4-2.2"></path><path d="M9 9v.01"></path><path d="M15 9v.01"></path></svg>
+</a>
+<a href="#top" style="height: 100%; display: flex; align-items: center; padding: 0 18px; background: #f2c230; font-family: 'Geist Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 1px">★ HOME</a>
+<a href="About.html" style="height: 100%; display: flex; align-items: center; padding: 0 18px; font-family: 'Geist Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 1px">● ABOUT</a>
+<a href="Work.html" style="height: 100%; display: flex; align-items: center; padding: 0 18px; font-family: 'Geist Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 1px">▦ WORK</a>
+<a href="Contact.html" style="height: 100%; display: flex; align-items: center; padding: 0 18px; font-family: 'Geist Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 1px">◆ CONTACT</a>
+</div>
+<div style="display: flex; align-items: center; gap: 10px">
+<a class="wob" href="https://www.tiktok.com/@patrickhavingfun" aria-label="TikTok" style="width: 34px; height: 34px; border-radius: 50%; background: #ef4f8a; display: flex; align-items: center; justify-content: center; color: #1c1a19"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"></path><path d="M14 3c.5 2.8 2.4 4.6 5 5"></path></svg></a>
+<a class="wob" href="https://www.instagram.com/__patrickkk__/" aria-label="Instagram" style="width: 34px; height: 34px; border-radius: 50%; background: #2eaa5c; display: flex; align-items: center; justify-content: center; color: #1c1a19"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle></svg></a>
+<a class="wob" href="https://www.linkedin.com/in/irakli-jashi-490ba789/" aria-label="LinkedIn" style="width: 34px; height: 34px; border-radius: 50%; background: #f2c230; display: flex; align-items: center; justify-content: center; color: #1c1a19"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10v8"></path><path d="M7 6v.01"></path><path d="M11 18v-5a3 3 0 0 1 6 0v5"></path><path d="M11 10v8"></path></svg></a>
+<a href="Contact.html" style="margin-left: 8px; height: 38px; padding: 0 16px; border: 1.5px solid #1c1a19; display: flex; align-items: center; gap: 8px; font-family: 'Geist Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 1px">♥ CONTACT</a>
+</div>
+</nav>
 
-  <!-- ============ NAVBAR ============ -->
-  <header id="navbar" class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
-    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
-      <a href="#home" class="group text-lg font-extrabold tracking-tight text-white">
-        IRAKLI<span class="text-accent-pink transition-colors duration-300 group-hover:text-accent-cyan">.</span>JASHI
-      </a>
+<!-- HERO -->
+<section style="position: relative; height: 780px; display: flex; flex-direction: column; align-items: center; padding-top: 90px; box-sizing: border-box">
+<div style="font-family: 'Gochi Hand', cursive; font-size: 22px; color: #3a3836">my name is</div>
+<svg width="70" height="14" viewBox="0 0 70 14" fill="none" stroke="#3a3836" stroke-width="1.6" stroke-linecap="round"><path d="M2 5c10-3 20 3 33 0s22-3 33 0"></path><path d="M8 11c10-3 18 2 28 0s18-2 26 0"></path></svg>
 
-      <ul class="hidden items-center gap-9 text-sm font-medium md:flex">
-        <li><a href="#home" class="nav-link relative text-zinc-400 transition-colors hover:text-white after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-gradient-accent after:transition-all after:duration-300 hover:after:w-full">Home</a></li>
-        <li><a href="#about" class="nav-link relative text-zinc-400 transition-colors hover:text-white after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-gradient-accent after:transition-all after:duration-300 hover:after:w-full">About</a></li>
-        <li><a href="#projects" class="nav-link relative text-zinc-400 transition-colors hover:text-white after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-gradient-accent after:transition-all after:duration-300 hover:after:w-full">Projects</a></li>
-        <li><a href="#contact" class="nav-link relative text-zinc-400 transition-colors hover:text-white after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-gradient-accent after:transition-all after:duration-300 hover:after:w-full">Contact</a></li>
-      </ul>
+<div style="position: relative; margin-top: 18px">
+<div style="padding: 26px 48px; border: 3px solid #ec6a3c; border-radius: 6px; background: #fbfbf8; font-family: 'Silkscreen', monospace; font-weight: 700; font-size: 84px; line-height: 88px; color: #1c1a19; letter-spacing: 2px">IRAKLI JASHI</div>
+<span style="position: absolute; left: -90px; top: -30px; padding: 8px 16px; border-radius: 8px; background: #b7e4cc; border: 1.5px solid #6fb893; font-family: 'Geist Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 1px; transform: rotate(-3deg)">TIKTOKS FOR BRANDS</span>
+<span style="position: absolute; right: -100px; top: -30px; padding: 8px 16px; border-radius: 8px; background: #f3e1b3; border: 1.5px solid #d4b35e; font-family: 'Geist Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 1px; transform: rotate(3deg)">HOOK IN 1 SECOND</span>
+<span style="position: absolute; left: -120px; bottom: -58px; padding: 10px 16px; background: #f2c230; font-family: 'Gochi Hand', cursive; font-size: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.12); transform: rotate(-2deg)">Brand TikTok Producer</span>
+<span style="position: absolute; right: -120px; bottom: -58px; padding: 10px 16px; background: #b7e4cc; font-family: 'Gochi Hand', cursive; font-size: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.12); transform: rotate(2deg)">Video Producer</span>
+</div>
 
-      <a href="#contact" class="hidden rounded-full border border-white/10 bg-white/5 px-5 py-2 text-sm font-semibold text-white transition-all duration-300 hover:border-accent-pink/60 hover:bg-accent-pink hover:shadow-[0_0_24px_rgba(254,44,85,.45)] md:inline-block">
-        Let's Talk
-      </a>
+<div style="margin-top: 22px; display: flex; align-items: center; gap: 8px; font-family: 'Geist Mono', monospace; font-size: 12px; font-weight: 500; letter-spacing: 1.5px">
+<span style="width: 8px; height: 8px; border-radius: 50%; background: #2f55d4"></span>OPEN FOR FREELANCE &amp; PART-TIME WORK · TBILISI</div>
 
-      <button id="menu-btn" aria-label="Toggle menu" aria-expanded="false" class="relative z-50 flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-white md:hidden">
-        <svg id="icon-open" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
-        <svg id="icon-close" class="hidden h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg>
-      </button>
-    </nav>
+<h1 style="margin: 70px 0 0; font-size: 52px; line-height: 60px; font-weight: 600; text-align: center; letter-spacing: -1.2px; max-width: 880px">I make TikToks for brands that people actually <span style="background: #f2c230; padding: 0 8px">finish watching.</span></h1>
 
-    <!-- Mobile menu -->
-    <div id="mobile-menu" class="pointer-events-none absolute inset-x-0 top-0 -translate-y-4 border-b border-white/10 bg-ink-950/95 px-5 pb-8 pt-24 opacity-0 backdrop-blur-xl transition-all duration-300 md:hidden">
-      <ul class="flex flex-col gap-2 text-lg font-semibold">
-        <li><a href="#home" class="mobile-link block rounded-lg px-3 py-3 text-zinc-300 transition hover:bg-white/5 hover:text-white">Home</a></li>
-        <li><a href="#about" class="mobile-link block rounded-lg px-3 py-3 text-zinc-300 transition hover:bg-white/5 hover:text-white">About</a></li>
-        <li><a href="#projects" class="mobile-link block rounded-lg px-3 py-3 text-zinc-300 transition hover:bg-white/5 hover:text-white">Projects</a></li>
-        <li><a href="#contact" class="mobile-link block rounded-lg px-3 py-3 text-zinc-300 transition hover:bg-white/5 hover:text-white">Contact</a></li>
-      </ul>
-    </div>
-  </header>
+<a href="#contact" style="margin-top: 36px; height: 48px; padding: 0 22px; background: #1c1a19; color: #ffffff; display: flex; align-items: center; gap: 12px; font-family: 'Geist Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 1.5px">
+<span style="width: 22px; height: 22px; background: #2f55d4; display: flex; align-items: center; justify-content: center">↗</span>CONTACT ME</a>
 
-  <main>
-    <!-- ============ HERO ============ -->
-    <section id="home" class="relative flex min-h-screen items-center overflow-hidden pt-24">
-      <div class="grid-bg absolute inset-0"></div>
-      <div class="pointer-events-none absolute -left-32 top-1/4 h-96 w-96 rounded-full bg-accent-cyan/20 blur-[120px]"></div>
-      <div class="pointer-events-none absolute -right-32 bottom-1/4 h-96 w-96 rounded-full bg-accent-pink/20 blur-[120px]"></div>
 
-      <div class="relative mx-auto grid w-full max-w-7xl items-center gap-16 px-5 py-16 sm:px-8 lg:grid-cols-12">
-        <div class="lg:col-span-7">
-          <div class="animate-fadeUp mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium text-zinc-300 backdrop-blur">
-            <span class="relative flex h-2 w-2"><span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent-cyan opacity-75"></span><span class="relative inline-flex h-2 w-2 rounded-full bg-accent-cyan"></span></span>
-            Available for brand collaborations
-          </div>
+<svg width="1360" height="60" viewBox="0 0 1360 60" fill="none" stroke="#9a9892" stroke-width="1.2" style="position: absolute; left: 0; bottom: 0"><path d="M0 58 C 300 8, 1060 8, 1360 58"></path></svg>
+</section>
 
-          <h1 class="animate-fadeUp text-4xl font-black leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl" style="animation-delay:.1s">
-            Stories that stop<br class="hidden sm:block" />
-            <span class="text-gradient">the scroll.</span>
-          </h1>
+<!-- ABOUT -->
 
-          <p class="animate-fadeUp mt-6 max-w-xl text-base leading-relaxed text-zinc-400 sm:text-lg" style="animation-delay:.2s">
-            I'm <span class="font-semibold text-white">Irakli Jashi</span> — a TikTok Content Creator and Video Producer turning ideas into short-form videos people actually watch, share, and remember.
-          </p>
 
-          <div class="animate-fadeUp mt-10 flex flex-col gap-4 sm:flex-row" style="animation-delay:.3s">
-            <a href="#projects" class="group inline-flex items-center justify-center gap-2 rounded-full bg-gradient-accent px-8 py-4 text-sm font-bold text-white shadow-[0_10px_40px_-10px_rgba(139,92,246,.7)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_50px_-10px_rgba(254,44,85,.7)]">
-              View Projects
-              <svg class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7"/></svg>
-            </a>
-            <a href="#contact" class="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-8 py-4 text-sm font-bold text-white backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:border-accent-cyan/60 hover:bg-white/10">
-              Get in Touch
-            </a>
-          </div>
+<!-- WORK -->
+<section id="about" style="position: relative; height: 1100px; display: flex; flex-direction: column; align-items: center; padding-top: 80px; box-sizing: border-box">
+<span style="position: absolute; left: 60px; top: 20px; font-family: 'Gochi Hand', cursive; font-size: 18px">about me!</span>
+<div style="padding: 6px 16px; border: 1.5px solid #1c1a19; border-radius: 4px; background: #fbfbf8; font-family: 'Geist Mono', monospace; font-size: 22px; font-weight: 500">what's up</div>
+<p style="margin: 36px 0 0; max-width: 760px; text-align: center; font-family: 'Gochi Hand', cursive; font-size: 27px; line-height: 40px; color: #1c1a19">Hi, I'm Irakli, I'm 22. Right now I work as a TikTok content creator at a creative agency, and I have 3 years of experience in this field. I write the scripts, film and edit. Long story short: <span style="font-family: 'Noto Sans Georgian', sans-serif; font-size: 22px; font-weight: 600">კონტენტს ვთლი და ჭერში ვაწყობ</span></p>
 
-          <div class="animate-fadeUp mt-14 flex flex-wrap gap-x-10 gap-y-6" style="animation-delay:.4s">
-            <div><p class="text-3xl font-extrabold text-white">1M+</p><p class="text-xs uppercase tracking-widest text-zinc-500">Total Views</p></div>
-            <div><p class="text-3xl font-extrabold text-white">3+</p><p class="text-xs uppercase tracking-widest text-zinc-500">Years Creating</p></div>
-            <div><p class="text-3xl font-extrabold text-white">150+</p><p class="text-xs uppercase tracking-widest text-zinc-500">Videos Produced</p></div>
-          </div>
-        </div>
+<div style="margin-top: 26px; display: flex; flex-direction: column; align-items: center; gap: 12px">
+<span style="font-family: 'Gochi Hand', cursive; font-size: 20px">brands I've worked with ↓</span>
+<div style="max-width: 900px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px">
+<span style="padding: 6px 12px; border: 1.5px solid #1c1a19; background: #fbfbf8; font-family: 'Geist Mono', monospace; font-size: 13px; font-weight: 500">Kiwipost</span>
+<span style="padding: 6px 12px; border: 1.5px solid #1c1a19; background: #fbfbf8; font-family: 'Geist Mono', monospace; font-size: 13px; font-weight: 500">Dinamo Water Polo Academy</span>
+<span style="padding: 6px 12px; border: 1.5px solid #1c1a19; background: #fbfbf8; font-family: 'Geist Mono', monospace; font-size: 13px; font-weight: 500">Dinamo Water Polo Club</span>
+<span style="padding: 6px 12px; border: 1.5px solid #1c1a19; background: #fbfbf8; font-family: 'Geist Mono', monospace; font-size: 13px; font-weight: 500">Celsiusi.ge</span>
+<span style="padding: 6px 12px; border: 1.5px solid #1c1a19; background: #fbfbf8; font-family: 'Geist Mono', monospace; font-size: 13px; font-weight: 500">Ilo's Podcast</span>
+<span style="padding: 6px 12px; border: 1.5px solid #1c1a19; background: #fbfbf8; font-family: 'Geist Mono', monospace; font-size: 13px; font-weight: 500">Spezi Georgia</span>
+<span style="padding: 6px 12px; border: 1.5px solid #1c1a19; background: #fbfbf8; font-family: 'Geist Mono', monospace; font-size: 13px; font-weight: 500">Citycom</span>
+<span style="padding: 6px 12px; border: 1.5px solid #1c1a19; background: #fbfbf8; font-family: 'Geist Mono', monospace; font-size: 13px; font-weight: 500">RC Cola</span>
+</div>
+</div>
 
-        <!-- Phone mockup -->
-        <div class="relative mx-auto hidden w-full max-w-xs lg:col-span-5 lg:block">
-          <div class="animate-float relative">
-            <div class="absolute -inset-4 rounded-[3rem] bg-gradient-accent opacity-40 blur-2xl"></div>
-            <div class="relative aspect-[9/19] overflow-hidden rounded-[2.75rem] border-[6px] border-ink-700 bg-ink-900 shadow-2xl">
-              <div class="absolute inset-0 bg-gradient-to-br from-accent-violet/40 via-ink-900 to-accent-pink/30"></div>
-              <div class="absolute left-1/2 top-3 h-5 w-24 -translate-x-1/2 rounded-full bg-black"></div>
-              <div class="absolute inset-0 flex items-center justify-center">
-                <div class="flex h-16 w-16 items-center justify-center rounded-full bg-white/15 backdrop-blur">
-                  <svg class="ml-1 h-7 w-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                </div>
-              </div>
-              <div class="absolute bottom-24 right-3 flex flex-col items-center gap-5 text-white">
-                <div class="flex flex-col items-center"><svg class="h-7 w-7 text-accent-pink" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><span class="text-[10px] font-semibold">248K</span></div>
-                <div class="flex flex-col items-center"><svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24"><path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z"/></svg><span class="text-[10px] font-semibold">3.1K</span></div>
-                <div class="flex flex-col items-center"><svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24"><path d="M14 9V5l7 7-7 7v-4.1c-5 0-8.5 1.6-11 5.1 1-5 4-10 11-11z"/></svg><span class="text-[10px] font-semibold">12K</span></div>
-              </div>
-              <div class="absolute inset-x-4 bottom-6 text-white">
-                <p class="text-sm font-bold">@iraklijashi</p>
-                <p class="mt-1 text-xs text-zinc-300">Behind the scenes of a 60s edit 🎬 #creator #fyp</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<div style="margin-top: 40px; display: flex; flex-direction: column; align-items: center; gap: 16px">
+<div style="display: flex; gap: 12px; align-items: center">
+<span class="wob" style="padding: 12px 22px; background: #f2c230; font-size: 18px; font-weight: 600">Scripting &amp; Hooks</span>
+<span class="wob" style="width: 46px; height: 46px; background: #f2c230; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1c1a19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"></path></svg></span>
+<span class="wob" style="padding: 12px 22px; background: #2eaa5c; color: #ffffff; font-size: 18px; font-weight: 600">Filming</span>
+<span class="wob" style="width: 46px; height: 46px; background: #2eaa5c; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2"></rect><path d="M22 8l-6 4 6 4z"></path></svg></span>
+</div>
+<div style="display: flex; gap: 12px; align-items: center">
+<span class="wob" style="padding: 12px 22px; background: #ef4f8a; color: #ffffff; font-size: 18px; font-weight: 600">Editing</span>
+<span class="wob" style="width: 46px; height: 46px; background: #ef4f8a; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M20 4L8.1 15.9"></path><path d="M14.5 14.5L20 20"></path></svg></span>
+<span class="wob" style="padding: 12px 22px; background: #2f55d4; color: #ffffff; font-size: 18px; font-weight: 600">Trend Research</span>
+<span class="wob" style="width: 46px; height: 46px; background: #2f55d4; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"></path><path d="M15 7h6v6"></path></svg></span>
+</div>
+<div style="display: flex; gap: 12px; align-items: center">
+<span class="wob" style="padding: 12px 22px; background: #ec6a3c; color: #1c1a19; font-size: 18px; font-weight: 600">Instagram Story Filming</span>
+<span class="wob" style="width: 46px; height: 46px; background: #ec6a3c; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1c1a19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17.5 6.5v.01"></path></svg></span>
+</div>
+</div>
 
-      <a href="#about" aria-label="Scroll to About" class="absolute bottom-8 left-1/2 hidden -translate-x-1/2 text-zinc-500 transition hover:text-white sm:block">
-        <svg class="h-6 w-6 animate-bounce" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-      </a>
-    </section>
+<!-- stats -->
+<div style="margin-top: 56px; width: 1120px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border: 1.5px solid #1c1a19; background: #fbfbf8">
+<div style="padding: 26px 28px; border-right: 1.5px solid #1c1a19; display: flex; flex-direction: column; gap: 10px"><span style="font-family: &quot;Geist Mono&quot;, monospace; font-size: 11px; letter-spacing: 1.5px; color: rgb(92, 89, 85)">● BRANDS WORKED WITH</span><span style="font-family: Silkscreen, monospace; font-weight: 700; font-size: 44px; line-height: 44px">10+</span></div>
+<div style="padding: 26px 28px; border-right: 1.5px solid #1c1a19; display: flex; flex-direction: column; gap: 10px"><span style="font-family: &quot;Geist Mono&quot;, monospace; font-size: 11px; letter-spacing: 1.5px; color: rgb(92, 89, 85)">● VIEWS FOR CLIENTS</span><span style="font-family: Silkscreen, monospace; font-weight: 700; font-size: 44px; line-height: 44px">4.9M+</span></div>
+<div style="padding: 26px 28px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: &quot;Geist Mono&quot;, monospace; font-size: 11px; letter-spacing: 1.5px; color: rgb(92, 89, 85)">● VIDEOS DELIVERED</span><span style="font-family: Silkscreen, monospace; font-weight: 700; font-size: 44px; line-height: 44px">600+</span></div>
+</div>
 
-    <!-- ============ ABOUT ============ -->
-    <section id="about" class="relative py-24 sm:py-32">
-      <div class="mx-auto max-w-7xl px-5 sm:px-8">
-        <div class="grid items-start gap-16 lg:grid-cols-2">
-          <div class="reveal">
-            <p class="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-accent-cyan">About Me</p>
-            <h2 class="text-3xl font-black tracking-tight text-white sm:text-5xl">
-              Creator by passion,<br /><span class="text-gradient">producer by craft.</span>
-            </h2>
-            <div class="mt-8 space-y-5 leading-relaxed text-zinc-400">
-              <p>
-                For more than three years I've been living and breathing short-form video. What started as experimenting with a phone and a ring light turned into a full-time craft — writing hooks, directing shoots, and editing content that connects with audiences in the first second.
-              </p>
-              <p>
-                I handle the entire production pipeline: concept, scripting, filming, editing, sound design and trend strategy. I've partnered with brands and creators to build campaigns that feel native to TikTok — authentic, fast-paced, and built to perform.
-              </p>
-              <p>
-                What drives me is simple: the challenge of telling a meaningful story in under 60 seconds, and the thrill of watching it reach millions.
-              </p>
-            </div>
+<!-- polaroids -->
+<div style="position: absolute; left: 70px; top: 150px; width: 200px; padding: 10px 10px 34px; background: #ffffff; box-shadow: 0 8px 20px rgba(0,0,0,0.18); transform: rotate(-3deg)">
+<img src="assets/63efd6d18c43aeaea1e216b9ceeee329.jpg" alt="Irakli Jashi on set in a showroom, in a Paramore T-shirt with a clip-on mic" style="width: 180px; height: 220px; object-fit: cover; display: block">
+<div style="position: absolute; bottom: 8px; left: 0; right: 0; text-align: center; font-family: 'Gochi Hand', cursive; font-size: 15px">on set</div>
+<span style="position: absolute; left: -14px; top: -8px; width: 60px; height: 20px; background: rgba(120,140,220,0.5); transform: rotate(-30deg)"></span>
+<span style="position: absolute; right: -14px; top: -8px; width: 60px; height: 20px; background: rgba(242,194,48,0.55); transform: rotate(30deg)"></span>
+</div>
+<div style="position: absolute; right: 70px; top: 90px; width: 200px; padding: 10px 10px 34px; background: #ffffff; box-shadow: 0 8px 20px rgba(0,0,0,0.18); transform: rotate(2.5deg)">
+<img src="assets/abd678a085ceefcf7ccfa65c8e2dfb7b.jpg" alt="Irakli Jashi sticking his tongue out against an orange backdrop" style="width: 180px; height: 200px; object-fit: cover; display: block">
+<div style="position: absolute; bottom: 8px; left: 0; right: 0; text-align: center; font-family: 'Gochi Hand', cursive; font-size: 15px">my edit desk</div>
+<span style="position: absolute; left: -14px; top: -8px; width: 60px; height: 20px; background: rgba(120,140,220,0.5); transform: rotate(-30deg)"></span>
+<span style="position: absolute; right: -14px; top: -8px; width: 60px; height: 20px; background: rgba(242,194,48,0.55); transform: rotate(30deg)"></span>
+</div>
+</section><section id="work" style="padding: 40px 60px 0; display: flex; flex-direction: column">
+<div style="display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 40px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<span style="font-family: 'Gochi Hand', cursive; font-size: 20px">3 random projects, fresh every visit ↓</span>
+<h2 style="margin: 0; font-size: 56px; line-height: 60px; font-weight: 600; letter-spacing: -1.5px">Brand TikToks that did numbers.</h2>
+</div>
+<div style="display: flex; align-items: center; gap: 22px">
+<button type="button" id="shuffle" class="wob" style="height: 44px; padding: 0 18px; border: 1.5px solid #1c1a19; background: #f2c230; color: #1c1a19; cursor: pointer; font-family: 'Geist Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 1.5px">↻ SHUFFLE</button>
+<a href="Work.html" style="font-family: 'Geist Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 1.5px; border-bottom: 1.5px solid #1c1a19; padding-bottom: 4px">SEE ALL WORK →</a>
+</div>
+</div>
 
-            <div class="mt-8 flex flex-wrap gap-2">
-              <span class="rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium text-zinc-300">Short-form Storytelling</span>
-              <span class="rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium text-zinc-300">Video Editing</span>
-              <span class="rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium text-zinc-300">Trend Strategy</span>
-              <span class="rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium text-zinc-300">Brand Campaigns</span>
-              <span class="rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium text-zinc-300">Scriptwriting</span>
-              <span class="rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium text-zinc-300">Color & Sound</span>
-            </div>
-          </div>
+<!-- featured projects: 3 picked at random from all 8 -->
+<div id="featured"></div>
+</section>
 
-          <div class="reveal grid grid-cols-2 gap-4 sm:gap-6">
-            <div class="group rounded-2xl border border-white/10 bg-ink-800/60 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent-cyan/50 hover:shadow-[0_20px_50px_-20px_rgba(37,244,238,.35)] sm:p-8">
-              <p class="text-4xl font-black text-white sm:text-5xl">3<span class="text-accent-cyan">+</span></p>
-              <p class="mt-2 text-sm text-zinc-400">Years of Experience</p>
-            </div>
-            <div class="group mt-8 rounded-2xl border border-white/10 bg-ink-800/60 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent-pink/50 hover:shadow-[0_20px_50px_-20px_rgba(254,44,85,.35)] sm:p-8">
-              <p class="text-4xl font-black text-white sm:text-5xl">1M<span class="text-accent-pink">+</span></p>
-              <p class="mt-2 text-sm text-zinc-400">Organic Views</p>
-            </div>
-            <div class="group rounded-2xl border border-white/10 bg-ink-800/60 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent-violet/50 hover:shadow-[0_20px_50px_-20px_rgba(139,92,246,.35)] sm:p-8">
-              <p class="text-4xl font-black text-white sm:text-5xl">150<span class="text-accent-violet">+</span></p>
-              <p class="mt-2 text-sm text-zinc-400">Videos Produced</p>
-            </div>
-            <div class="group mt-8 rounded-2xl border border-white/10 bg-ink-800/60 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent-cyan/50 hover:shadow-[0_20px_50px_-20px_rgba(37,244,238,.35)] sm:p-8">
-              <p class="text-4xl font-black text-white sm:text-5xl">20<span class="text-accent-cyan">+</span></p>
-              <p class="mt-2 text-sm text-zinc-400">Brand Collaborations</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- CONTACT -->
+<section id="contact" style="flex-grow: 1; margin-top: 100px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 26px; background: #1c1a19; color: #ffffff; padding: 60px">
+<span style="font-family: 'Gochi Hand', cursive; font-size: 26px; color: #f2c230">let's talk!</span>
+<h2 style="margin: 0; text-align: center; font-family: 'Silkscreen', monospace; font-weight: 700; font-size: 72px; line-height: 78px">GOT A BRAND PEOPLE<br>SHOULD SEE?</h2>
+<a href="mailto:jashiirakli77@gmail.com" style="font-family: 'Geist Mono', monospace; font-size: 20px; color: #ffffff; border-bottom: 2px solid #ec6a3c; padding-bottom: 4px">jashiirakli77@gmail.com</a>
+<span style="font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 1.5px; color: #c9c6c0">BASED IN TBILISI · GEORGIAN &amp; ENGLISH · FREELANCE &amp; PART-TIME</span>
+<a href="https://wa.me/995598922935" style="font-family: 'Geist Mono', monospace; font-size: 16px; color: #ffffff">+995 598 92 29 35</a>
+<div style="margin-top: 20px; display: flex; gap: 14px">
+<a class="wob" href="https://www.tiktok.com/@patrickhavingfun" style="height: 52px; padding: 0 22px; background: #ef4f8a; color: #1c1a19; display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 17px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"></path><path d="M14 3c.5 2.8 2.4 4.6 5 5"></path></svg>TikTok</a>
+<a class="wob" href="https://www.instagram.com/__patrickkk__/" style="height: 52px; padding: 0 22px; background: #2eaa5c; color: #1c1a19; display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 17px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle></svg>Instagram</a>
+<a class="wob" href="https://www.linkedin.com/in/irakli-jashi-490ba789/" style="height: 52px; padding: 0 22px; background: #f2c230; color: #1c1a19; display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 17px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10v8"></path><path d="M7 6v.01"></path><path d="M11 18v-5a3 3 0 0 1 6 0v5"></path><path d="M11 10v8"></path></svg>LinkedIn</a>
+<a class="wob" href="https://wa.me/995598922935" style="height: 52px; padding: 0 22px; background: #ffffff; color: #1c1a19; display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 17px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.7-5A8.5 8.5 0 1 1 8 19.4z"></path><path d="M9 9.5c.3 2 2.2 4.2 4.5 5l1.3-1.3 2 1-.5 1.6c-3.6.4-7.9-3.8-7.6-7.4l1.6-.5 1 2z"></path></svg>WhatsApp</a>
+</div>
+<span style="margin-top: 30px; font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: 1.5px; color: #9a9892">© 2026 IRAKLI JASHI · MADE WITH TOO MANY TAKES</span>
+</section>
 
-    <!-- ============ PROJECTS ============ -->
-    <section id="projects" class="relative border-t border-white/5 bg-ink-900/50 py-24 sm:py-32">
-      <div class="mx-auto max-w-7xl px-5 sm:px-8">
-        <div class="reveal mb-14 flex flex-col justify-between gap-6 md:flex-row md:items-end">
-          <div>
-            <p class="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-accent-pink">Selected Work</p>
-            <h2 class="text-3xl font-black tracking-tight text-white sm:text-5xl">Featured <span class="text-gradient">Projects</span></h2>
-          </div>
-          <p class="max-w-md text-zinc-400">A selection of viral TikToks, branded campaigns and social media work I've created, directed and produced.</p>
-        </div>
-
-        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-
-          <!-- Card 1 -->
-          <article class="reveal group relative overflow-hidden rounded-2xl border border-white/10 bg-ink-800 transition-all duration-500 hover:-translate-y-2 hover:border-accent-cyan/50 hover:shadow-[0_30px_60px_-20px_rgba(37,244,238,.3)]">
-            <div class="relative aspect-[4/3] overflow-hidden">
-              <div class="absolute inset-0 bg-gradient-to-br from-cyan-500 via-sky-700 to-indigo-900 transition-transform duration-700 group-hover:scale-110"></div>
-              <div class="absolute inset-0 flex items-center justify-center">
-                <div class="flex h-16 w-16 scale-90 items-center justify-center rounded-full bg-white/20 opacity-0 backdrop-blur transition-all duration-500 group-hover:scale-100 group-hover:opacity-100">
-                  <svg class="ml-1 h-7 w-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                </div>
-              </div>
-              <span class="absolute left-4 top-4 rounded-full bg-black/40 px-3 py-1 text-xs font-semibold text-white backdrop-blur">Viral TikTok</span>
-              <span class="absolute bottom-4 right-4 flex items-center gap-1 rounded-full bg-black/40 px-3 py-1 text-xs font-semibold text-white backdrop-blur"><svg class="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17a5 5 0 110-10 5 5 0 010 10zm0-8a3 3 0 100 6 3 3 0 000-6z"/></svg>420K</span>
-            </div>
-            <div class="p-6">
-              <h3 class="text-lg font-bold text-white">A Day in Tbilisi in 60 Seconds</h3>
-              <p class="mt-2 text-sm leading-relaxed text-zinc-400">Fast-cut travel storytelling with synced transitions that became my most-shared video of the year.</p>
-              <div class="mt-5 flex items-center justify-between">
-                <div class="flex gap-2 text-xs text-zinc-500"><span>#travel</span><span>#editing</span></div>
-                <svg class="h-5 w-5 -translate-x-2 text-accent-cyan opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M9 7h8v8"/></svg>
-              </div>
-            </div>
-          </article>
-
-          <!-- Card 2 -->
-          <article class="reveal group relative overflow-hidden rounded-2xl border border-white/10 bg-ink-800 transition-all duration-500 hover:-translate-y-2 hover:border-accent-pink/50 hover:shadow-[0_30px_60px_-20px_rgba(254,44,85,.3)]">
-            <div class="relative aspect-[4/3] overflow-hidden">
-              <div class="absolute inset-0 bg-gradient-to-br from-rose-500 via-pink-700 to-purple-900 transition-transform duration-700 group-hover:scale-110"></div>
-              <div class="absolute inset-0 flex items-center justify-center">
-                <div class="flex h-16 w-16 scale-90 items-center justify-center rounded-full bg-white/20 opacity-0 backdrop-blur transition-all duration-500 group-hover:scale-100 group-hover:opacity-100">
-                  <svg class="ml-1 h-7 w-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                </div>
-              </div>
-              <span class="absolute left-4 top-4 rounded-full bg-black/40 px-3 py-1 text-xs font-semibold text-white backdrop-blur">Brand Campaign</span>
-              <span class="absolute bottom-4 right-4 flex items-center gap-1 rounded-full bg-black/40 px-3 py-1 text-xs font-semibold text-white backdrop-blur"><svg class="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17a5 5 0 110-10 5 5 0 010 10zm0-8a3 3 0 100 6 3 3 0 000-6z"/></svg>310K</span>
-            </div>
-            <div class="p-6">
-              <h3 class="text-lg font-bold text-white">Streetwear Drop Launch</h3>
-              <p class="mt-2 text-sm leading-relaxed text-zinc-400">A 5-part TikTok series for a local fashion brand, driving a sold-out collection within 48 hours.</p>
-              <div class="mt-5 flex items-center justify-between">
-                <div class="flex gap-2 text-xs text-zinc-500"><span>#fashion</span><span>#campaign</span></div>
-                <svg class="h-5 w-5 -translate-x-2 text-accent-pink opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M9 7h8v8"/></svg>
-              </div>
-            </div>
-          </article>
-
-          <!-- Card 3 -->
-          <article class="reveal group relative overflow-hidden rounded-2xl border border-white/10 bg-ink-800 transition-all duration-500 hover:-translate-y-2 hover:border-accent-violet/50 hover:shadow-[0_30px_60px_-20px_rgba(139,92,246,.3)]">
-            <div class="relative aspect-[4/3] overflow-hidden">
-              <div class="absolute inset-0 bg-gradient-to-br from-violet-500 via-purple-800 to-slate-900 transition-transform duration-700 group-hover:scale-110"></div>
-              <div class="absolute inset-0 flex items-center justify-center">
-                <div class="flex h-16 w-16 scale-90 items-center justify-center rounded-full bg-white/20 opacity-0 backdrop-blur transition-all duration-500 group-hover:scale-100 group-hover:opacity-100">
-                  <svg class="ml-1 h-7 w-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                </div>
-              </div>
-              <span class="absolute left-4 top-4 rounded-full bg-black/40 px-3 py-1 text-xs font-semibold text-white backdrop-blur">Content Series</span>
-              <span class="absolute bottom-4 right-4 flex items-center gap-1 rounded-full bg-black/40 px-3 py-1 text-xs font-semibold text-white backdrop-blur"><svg class="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17a5 5 0 110-10 5 5 0 010 10zm0-8a3 3 0 100 6 3 3 0 000-6z"/></svg>185K</span>
-            </div>
-            <div class="p-6">
-              <h3 class="text-lg font-bold text-white">Editing Secrets Series</h3>
-              <p class="mt-2 text-sm leading-relaxed text-zinc-400">Educational micro-tutorials breaking down transitions and pacing, growing a loyal creator community.</p>
-              <div class="mt-5 flex items-center justify-between">
-                <div class="flex gap-2 text-xs text-zinc-500"><span>#tutorial</span><span>#creators</span></div>
-                <svg class="h-5 w-5 -translate-x-2 text-accent-violet opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M9 7h8v8"/></svg>
-              </div>
-            </div>
-          </article>
-
-          <!-- Card 4 -->
-          <article class="reveal group relative overflow-hidden rounded-2xl border border-white/10 bg-ink-800 transition-all duration-500 hover:-translate-y-2 hover:border-accent-pink/50 hover:shadow-[0_30px_60px_-20px_rgba(254,44,85,.3)]">
-            <div class="relative aspect-[4/3] overflow-hidden">
-              <div class="absolute inset-0 bg-gradient-to-br from-amber-400 via-orange-600 to-rose-900 transition-transform duration-700 group-hover:scale-110"></div>
-              <div class="absolute inset-0 flex items-center justify-center">
-                <div class="flex h-16 w-16 scale-90 items-center justify-center rounded-full bg-white/20 opacity-0 backdrop-blur transition-all duration-500 group-hover:scale-100 group-hover:opacity-100">
-                  <svg class="ml-1 h-7 w-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                </div>
-              </div>
-              <span class="absolute left-4 top-4 rounded-full bg-black/40 px-3 py-1 text-xs font-semibold text-white backdrop-blur">Food & Lifestyle</span>
-              <span class="absolute bottom-4 right-4 flex items-center gap-1 rounded-full bg-black/40 px-3 py-1 text-xs font-semibold text-white backdrop-blur"><svg class="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17a5 5 0 110-10 5 5 0 010 10zm0-8a3 3 0 100 6 3 3 0 000-6z"/></svg>260K</span>
-            </div>
-            <div class="p-6">
-              <h3 class="text-lg font-bold text-white">Restaurant Reels Package</h3>
-              <p class="mt-2 text-sm leading-relaxed text-zinc-400">Mouth-watering cinematic food content for a restaurant group, boosting weekend reservations by 35%.</p>
-              <div class="mt-5 flex items-center justify-between">
-                <div class="flex gap-2 text-xs text-zinc-500"><span>#food</span><span>#ugc</span></div>
-                <svg class="h-5 w-5 -translate-x-2 text-accent-pink opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M9 7h8v8"/></svg>
-              </div>
-            </div>
-          </article>
-
-          <!-- Card 5 -->
-          <article class="reveal group relative overflow-hidden rounded-2xl border border-white/10 bg-ink-800 transition-all duration-500 hover:-translate-y-2 hover:border-accent-cyan/50 hover:shadow-[0_30px_60px_-20px_rgba(37,244,238,.3)]">
-            <div class="relative aspect-[4/3] overflow-hidden">
-              <div class="absolute inset-0 bg-gradient-to-br from-emerald-400 via-teal-700 to-slate-900 transition-transform duration-700 group-hover:scale-110"></div>
-              <div class="absolute inset-0 flex items-center justify-center">
-                <div class="flex h-16 w-16 scale-90 items-center justify-center rounded-full bg-white/20 opacity-0 backdrop-blur transition-all duration-500 group-hover:scale-100 group-hover:opacity-100">
-                  <svg class="ml-1 h-7 w-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                </div>
-              </div>
-              <span class="absolute left-4 top-4 rounded-full bg-black/40 px-3 py-1 text-xs font-semibold text-white backdrop-blur">Social Strategy</span>
-              <span class="absolute bottom-4 right-4 flex items-center gap-1 rounded-full bg-black/40 px-3 py-1 text-xs font-semibold text-white backdrop-blur"><svg class="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17a5 5 0 110-10 5 5 0 010 10zm0-8a3 3 0 100 6 3 3 0 000-6z"/></svg>+12K</span>
-            </div>
-            <div class="p-6">
-              <h3 class="text-lg font-bold text-white">Fitness Brand Growth</h3>
-              <p class="mt-2 text-sm leading-relaxed text-zinc-400">Built and ran a 90-day content calendar across TikTok and Instagram, adding 12K new followers.</p>
-              <div class="mt-5 flex items-center justify-between">
-                <div class="flex gap-2 text-xs text-zinc-500"><span>#growth</span><span>#strategy</span></div>
-                <svg class="h-5 w-5 -translate-x-2 text-accent-cyan opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M9 7h8v8"/></svg>
-              </div>
-            </div>
-          </article>
-
-          <!-- Card 6 -->
-          <article class="reveal group relative overflow-hidden rounded-2xl border border-white/10 bg-ink-800 transition-all duration-500 hover:-translate-y-2 hover:border-accent-violet/50 hover:shadow-[0_30px_60px_-20px_rgba(139,92,246,.3)]">
-            <div class="relative aspect-[4/3] overflow-hidden">
-              <div class="absolute inset-0 bg-gradient-to-br from-fuchsia-500 via-indigo-700 to-ink-900 transition-transform duration-700 group-hover:scale-110"></div>
-              <div class="absolute inset-0 flex items-center justify-center">
-                <div class="flex h-16 w-16 scale-90 items-center justify-center rounded-full bg-white/20 opacity-0 backdrop-blur transition-all duration-500 group-hover:scale-100 group-hover:opacity-100">
-                  <svg class="ml-1 h-7 w-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                </div>
-              </div>
-              <span class="absolute left-4 top-4 rounded-full bg-black/40 px-3 py-1 text-xs font-semibold text-white backdrop-blur">Music Video</span>
-              <span class="absolute bottom-4 right-4 flex items-center gap-1 rounded-full bg-black/40 px-3 py-1 text-xs font-semibold text-white backdrop-blur"><svg class="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17a5 5 0 110-10 5 5 0 010 10zm0-8a3 3 0 100 6 3 3 0 000-6z"/></svg>140K</span>
-            </div>
-            <div class="p-6">
-              <h3 class="text-lg font-bold text-white">Vertical Music Video</h3>
-              <p class="mt-2 text-sm leading-relaxed text-zinc-400">Directed and edited a vertical-first music video for an independent artist, sparking a TikTok sound trend.</p>
-              <div class="mt-5 flex items-center justify-between">
-                <div class="flex gap-2 text-xs text-zinc-500"><span>#music</span><span>#directing</span></div>
-                <svg class="h-5 w-5 -translate-x-2 text-accent-violet opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M9 7h8v8"/></svg>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ CONTACT ============ -->
-    <section id="contact" class="relative overflow-hidden py-24 sm:py-32">
-      <div class="pointer-events-none absolute left-1/2 top-1/2 h-[28rem] w-[28rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent-violet/20 blur-[140px]"></div>
-
-      <div class="relative mx-auto max-w-4xl px-5 text-center sm:px-8">
-        <div class="reveal">
-          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-accent-violet">Get in Touch</p>
-          <h2 class="text-3xl font-black tracking-tight text-white sm:text-6xl">
-            Let's create something<br /><span class="text-gradient">worth watching.</span>
-          </h2>
-          <p class="mx-auto mt-6 max-w-xl text-zinc-400">
-            Have a brand, campaign or idea in mind? I'm open to collaborations, production work and creative partnerships. Drop me a message.
-          </p>
-
-          <!-- Replace with your real email address -->
-          <a href="mailto:hello@iraklijashi.com" class="group mt-10 inline-flex items-center gap-3 rounded-full bg-gradient-accent px-8 py-4 text-sm font-bold text-white shadow-[0_10px_40px_-10px_rgba(139,92,246,.7)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_50px_-10px_rgba(254,44,85,.7)] sm:text-base">
-            <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-            hello@iraklijashi.com
-            <svg class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-
-        <!-- Replace the href values with your real profile URLs -->
-        <div class="reveal mt-16 grid gap-4 sm:grid-cols-3">
-          <a href="https://www.tiktok.com/@iraklijashi" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-4 rounded-2xl border border-white/10 bg-ink-800/70 p-5 text-left backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-accent-cyan/60 hover:shadow-[0_20px_50px_-20px_rgba(37,244,238,.45)]">
-            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white/5 text-white transition-all duration-300 group-hover:bg-accent-cyan group-hover:text-ink-950">
-              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/></svg>
-            </span>
-            <span><span class="block font-bold text-white">TikTok</span><span class="text-sm text-zinc-500">@iraklijashi</span></span>
-          </a>
-
-          <a href="https://www.instagram.com/iraklijashi" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-4 rounded-2xl border border-white/10 bg-ink-800/70 p-5 text-left backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-accent-pink/60 hover:shadow-[0_20px_50px_-20px_rgba(254,44,85,.45)]">
-            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white/5 text-white transition-all duration-300 group-hover:bg-gradient-to-br group-hover:from-amber-400 group-hover:via-pink-500 group-hover:to-purple-600">
-              <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-            </span>
-            <span><span class="block font-bold text-white">Instagram</span><span class="text-sm text-zinc-500">@iraklijashi</span></span>
-          </a>
-
-          <a href="https://www.linkedin.com/in/iraklijashi" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-4 rounded-2xl border border-white/10 bg-ink-800/70 p-5 text-left backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-accent-violet/60 hover:shadow-[0_20px_50px_-20px_rgba(139,92,246,.45)]">
-            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white/5 text-white transition-all duration-300 group-hover:bg-[#0a66c2]">
-              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
-            </span>
-            <span><span class="block font-bold text-white">LinkedIn</span><span class="text-sm text-zinc-500">Irakli Jashi</span></span>
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ============ FOOTER ============ -->
-  <footer class="border-t border-white/5 py-8">
-    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 text-sm text-zinc-500 sm:flex-row sm:px-8">
-      <p>&copy; <span id="year"></span> Irakli Jashi. All rights reserved.</p>
-      <a href="#home" class="font-bold tracking-tight text-zinc-300 transition hover:text-white">IRAKLI<span class="text-accent-pink">.</span>JASHI</a>
-    </div>
-  </footer>
-
-  <script>
-    // Footer year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Navbar background on scroll
-    const navbar = document.getElementById('navbar');
-    const onScroll = () => {
-      const scrolled = window.scrollY > 20;
-      navbar.classList.toggle('bg-ink-950/80', scrolled);
-      navbar.classList.toggle('backdrop-blur-xl', scrolled);
-      navbar.classList.toggle('border-b', scrolled);
-      navbar.classList.toggle('border-white/5', scrolled);
-    };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
-
-    // Mobile menu
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const iconOpen = document.getElementById('icon-open');
-    const iconClose = document.getElementById('icon-close');
-    const setMenu = (open) => {
-      mobileMenu.classList.toggle('opacity-0', !open);
-      mobileMenu.classList.toggle('-translate-y-4', !open);
-      mobileMenu.classList.toggle('pointer-events-none', !open);
-      iconOpen.classList.toggle('hidden', open);
-      iconClose.classList.toggle('hidden', !open);
-      menuBtn.setAttribute('aria-expanded', String(open));
-    };
-    menuBtn.addEventListener('click', () => setMenu(menuBtn.getAttribute('aria-expanded') !== 'true'));
-    document.querySelectorAll('.mobile-link').forEach(link => link.addEventListener('click', () => setMenu(false)));
-
-    // Reveal on scroll
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
-    document.querySelectorAll('.reveal').forEach((el, i) => {
-      el.style.transitionDelay = `${(i % 3) * 80}ms`;
-      observer.observe(el);
-    });
-
-    // Highlight active nav link
-    const sections = document.querySelectorAll('main section[id]');
-    const navLinks = document.querySelectorAll('.nav-link');
-    const activeObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          navLinks.forEach(link => {
-            const active = link.getAttribute('href') === `#${entry.target.id}`;
-            link.classList.toggle('text-white', active);
-            link.classList.toggle('text-zinc-400', !active);
-          });
-        }
-      });
-    }, { rootMargin: '-50% 0px -50% 0px' });
-    sections.forEach(s => activeObserver.observe(s));
-  </script>
+</div>
+</div>
+<script>
+const PROJECTS = [{"n": "01", "href": "Project01.html", "name": "Citycom", "cat": "● MONTHLY CONTENT · FINTECH", "desc": "Monthly TikToks for Georgia's first fintech platform for residential communities: strategy, filming, editing and community. Followers grew from 500 to 1,203.", "bg": "#1c1a19", "fg": "#ffffff", "sub": "#c9c6c0", "tagBg": "#2f55d4", "tagFg": "#ffffff", "b1": "#3a3533", "b2": "#2f55d4", "s1": "assets/0a1515175e7ab5a2c014aa47084f7c7c.jpg", "s2": "assets/46e8d1672c465063bc738235498bfeaf.jpg", "logo": "assets/245f34530306344fcbf87601d6df1fce.png", "logoBorder": "none"}, {"n": "02", "href": "Project02.html", "name": "Krombacher Spezi", "cat": "● MONTHLY CONTENT · BEVERAGE", "desc": "Monthly TikToks for Krombacher Spezi Georgia: strategy, filming, editing and community. Followers went from 0 to 1,178 between June and October 2025.", "bg": "#f36f21", "fg": "#1c1a19", "sub": "#2a1305", "tagBg": "#f36f21", "tagFg": "#1c1a19", "b1": "#1c1a19", "b2": "#1c1a19", "s1": "assets/212a16b628385a50bb9d38c3a52cec45.jpg", "s2": "assets/c5e4ac72714da5836d0ca8f9a92f9e65.jpg", "logo": "assets/c8526560fe8122f4ce8f028a27b4ef23.png", "logoBorder": "2px solid #1c1a19"}, {"n": "03", "href": "Project03.html", "name": "Dinamo WP Academy", "cat": "● MONTHLY CONTENT · SPORTS", "desc": "Monthly TikToks for Dinamo Tbilisi's water polo academy: strategy, filming, editing and community. 48 videos between June 2024 and September 2025.", "bg": "#1eb8e8", "fg": "#1c1a19", "sub": "#0c3a4a", "tagBg": "#1eb8e8", "tagFg": "#1c1a19", "b1": "#1c1a19", "b2": "#1c1a19", "s1": "assets/e4c89615a088d8f268690e548b69b4b5.jpg", "s2": "assets/6cebe470b4b1aec31dfefc50bdebdeeb.jpg", "logo": "assets/06480f8f0e065a417de27edf0cd89238.png", "logoBorder": "2px solid #1c1a19"}, {"n": "04", "href": "Project04.html", "name": "WPC Dinamo Tbilisi", "cat": "● MONTHLY CONTENT · SPORTS", "desc": "Monthly TikToks for Georgia's most decorated water polo club: 40 videos in 10 months, and the top one reached 181K views.", "bg": "#3166b3", "fg": "#ffffff", "sub": "#dfe7f5", "tagBg": "#3166b3", "tagFg": "#ffffff", "b1": "#1c1a19", "b2": "#ffffff", "s1": "assets/f5c25ff1b0334d2905e0956997396fc5.jpg", "s2": "assets/33d4952a43a3e65f58b56ea5a8583068.jpg", "logo": "assets/da907d4afdf607e21e58a0cf332499ba.png", "logoBorder": "2px solid #1c1a19"}, {"n": "05", "href": "Project05.html", "name": "Ilo's Podcast", "cat": "● PODCAST · FILM & EDIT", "desc": "Guest quiz videos for Ilo's Podcast, a joint project from Ambassadoribat and Ilo Beroshvili. I film and edit every episode in Adobe Premiere Pro.", "bg": "#161517", "fg": "#ffffff", "sub": "#c9c6c0", "tagBg": "#3f6674", "tagFg": "#ffffff", "b1": "#3a3533", "b2": "#ef4f8a", "s1": "assets/885f41912b07bce959ecb70a8ed7f2d7.jpg", "s2": "assets/7e50c042d0390fe9c8abacf4e620b15e.jpg", "logo": null, "logoBorder": "none"}, {"n": "06", "href": "Project06.html", "name": "RC Cola", "cat": "● MONTHLY CONTENT · BEVERAGE", "desc": "Monthly TikToks for RC Cola Georgia, made with my co-worker: 111 videos and 0 → 12.7K followers in six months.", "bg": "#0a42b0", "fg": "#ffffff", "sub": "#dbe5ff", "tagBg": "#0a42b0", "tagFg": "#ffffff", "b1": "#1c1a19", "b2": "#ffffff", "s1": "assets/4e72e6d734a004598579118f5889c63a.jpg", "s2": "assets/80cb717c8897ef9b449ff8fe45ee2e7b.jpg", "logo": "assets/94bb33407940696da68f5b58d2dd20be.png", "logoBorder": "2px solid #1c1a19"}, {"n": "07", "href": "Project07.html", "name": "Celsiusi.ge", "cat": "● MONTHLY CONTENT · HEATING & COOLING", "desc": "Monthly TikToks for Celsiusi.ge, a heating and cooling store: 0 → 2,733 followers, and the top video reached 203.6K views.", "bg": "#d21f2a", "fg": "#ffffff", "sub": "#ffe0e2", "tagBg": "#d21f2a", "tagFg": "#ffffff", "b1": "#1c1a19", "b2": "#ffffff", "s1": "assets/1e00c846ce32325647fb24b59115a592.jpg", "s2": "assets/62320d22162a235af4d9f37114d7a5ee.jpg", "logo": "assets/3e772aadbe5e9831eceec152dc5afee2.png", "logoBorder": "2px solid #1c1a19"}, {"n": "08", "href": "Project08.html", "name": "Kiwipost", "cat": "● 2-MONTH PROJECT · PARCEL DELIVERY", "desc": "Street TikToks for Kiwipost, the parcel delivery service: six videos in two months, and the best one reached 214.3K views.", "bg": "#7cc242", "fg": "#1c1a19", "sub": "#1f3b0b", "tagBg": "#7cc242", "tagFg": "#1c1a19", "b1": "#1c1a19", "b2": "#ffffff", "s1": "assets/109c32601fc132bad5437f3c5266839f.jpg", "s2": "assets/a974d5cd34641638447584114d10db0c.jpg", "logo": "assets/0fd209a1c5844f77169b66f21b1b838a.png", "logoBorder": "2px solid #1c1a19"}];
+const CARD = "<div style=\"display: flex; margin-top: {{ p.mt }}\">\n<span style=\"height: 40px; padding: 0 28px 0 18px; background: {{ p.tagBg }}; color: {{ p.tagFg }}; display: flex; align-items: center; font-family: 'Geist Mono', monospace; font-size: 11px; font-weight: 600; letter-spacing: 1.5px; clip-path: polygon(0 0, 88% 0, 100% 100%, 0 100%)\">✦ PROJECT {{ p.n }}</span>\n</div>\n<a class=\"lift\" href=\"{{ p.href }}\" style=\"height: 420px; background: {{ p.bg }}; color: {{ p.fg }}; display: flex; justify-content: space-between; padding: 48px; box-sizing: border-box; position: relative\">\n<div style=\"display: flex; flex-direction: column; gap: 16px; width: 560px\">\n<span style=\"font-family: 'Geist Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 1.5px\">{{ p.cat }}</span>\n<div style=\"display: flex; align-items: center; gap: 18px\">\n<!--IF:hasLogo--><img src=\"{{ p.logo }}\" alt=\"{{ p.name }} logo\" style=\"width: 64px; height: 64px; border-radius: 50%; border: {{ p.logoBorder }}; box-sizing: border-box; display: block\">\n<!--/IF--><!--IF:noLogo--><span aria-hidden=\"true\" style=\"width: 64px; height: 64px; border-radius: 50%; background: #161517; border: 2px solid #ef4f8a; box-sizing: border-box; display: flex; align-items: center; justify-content: center\"><svg width=\"30\" height=\"30\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#ffffff\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"9\" y=\"3\" width=\"6\" height=\"11\" rx=\"3\"></rect><path d=\"M5 11a7 7 0 0 0 14 0\"></path><path d=\"M12 18v3\"></path><path d=\"M8 21h8\"></path></svg></span>\n<!--/IF--><span style=\"font-size: 52px; line-height: 56px; font-weight: 600; letter-spacing: -1.6px; white-space: nowrap\">{{ p.name }}</span>\n</div>\n<span style=\"font-size: 17px; line-height: 26px; color: {{ p.sub }}\">{{ p.desc }}</span>\n<span style=\"margin-top: 12px; font-family: 'Geist Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 1.5px; text-decoration: underline\">VIEW PROJECT ↗</span>\n</div>\n<div style=\"display: flex; align-items: flex-start; gap: 20px; margin-top: -10px; margin-right: 40px\">\n<div style=\"position: relative; width: 190px; height: 346px; margin-top: 20px; border-radius: 28px; border: 6px solid {{ p.b1 }}; overflow: hidden; transform: rotate(-3deg)\"><img src=\"{{ p.s1 }}\" alt=\"Still from a {{ p.name }} TikTok\" style=\"width: 100%; height: 100%; object-fit: cover; display: block\"></div>\n<div style=\"position: relative; width: 190px; height: 346px; border-radius: 28px; border: 6px solid {{ p.b2 }}; overflow: hidden; transform: rotate(2deg)\"><img src=\"{{ p.s2 }}\" alt=\"Another still from a {{ p.name }} TikTok\" style=\"width: 100%; height: 100%; object-fit: cover; display: block\"></div>\n</div>\n</a>\n";
+function pickThree() {
+  const a = PROJECTS.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const t = a[i]; a[i] = a[j]; a[j] = t;
+  }
+  return a.slice(0, 3).sort((x, y) => x.n.localeCompare(y.n));
+}
+function esc(v) {
+  return String(v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+}
+function renderFeatured() {
+  document.getElementById('featured').innerHTML = pickThree().map((p, i) => {
+    const v = Object.assign({}, p, { mt: i === 0 ? '0px' : '28px', hasLogo: !!p.logo, noLogo: !p.logo, logo: p.logo || '' });
+    return CARD
+      .replace(/<!--IF:(\w+)-->([\s\S]*?)<!--\/IF-->/g, (m, k, inner) => v[k] ? inner : '')
+      .replace(/\{\{ p\.(\w+) \}\}/g, (m, k) => esc(v[k]));
+  }).join('');
+}
+renderFeatured();
+document.getElementById('shuffle').addEventListener('click', renderFeatured);
+</script>
 </body>
 </html>
