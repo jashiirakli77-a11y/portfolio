@@ -20,9 +20,10 @@ html{scroll-behavior:smooth}
 .wob:hover{transform:rotate(-3deg) scale(1.05)}
 </style>
 <style>html,body{background:#fbfbf8;overflow-x:hidden}#top{margin:0 auto;background:none!important}</style>
-<script>function fit(){document.documentElement.style.zoom=Math.max(window.innerWidth,320)/1360}fit();addEventListener('resize',fit)</script>
+<link rel="stylesheet" href="assets/mobile.css">
+<script>function fit(){var w=window.innerWidth;document.documentElement.style.zoom=w<=820?1:w/1360}fit();addEventListener('resize',fit)</script>
 </head>
-<body>
+<body class="page-index">
 <div id="top" style="width: 1360px; height: 4100px; box-sizing: border-box; padding: 0; display: flex; background-color: #8d8d8d; background-image: linear-gradient(rgba(255,255,255,0.35) 2px, transparent 2px), linear-gradient(90deg, rgba(255,255,255,0.35) 2px, transparent 2px); background-size: 56px 56px; font-family: 'Geist', sans-serif">
 <div style="flex-grow: 1; display: flex; flex-direction: column; background-color: #fbfbf8; background-image: repeating-linear-gradient(0deg, transparent 0px, transparent 31px, #e8e8e2 31px, #e8e8e2 32px); overflow: hidden">
 
